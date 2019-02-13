@@ -1,0 +1,11 @@
+; Author : ert
+
+.include <m328pdef.inc>
+
+.ORG 0		
+.SET	A = 255
+.SET	B = 1
+
+	LDI R16, A		;LOAD IN A
+	LDI R17, B		;LOAD IN B
+	ADC R17, R16	;ADD A TO B AND STORE THE RESULT IN R16 AND HALF CARRY BIT SHOULD BE SET TO 1
